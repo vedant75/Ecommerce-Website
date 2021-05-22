@@ -1,0 +1,117 @@
+.Navbar{
+    grid-column: full-start / full-end;
+    background-color: #55c57a;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-rows: 5vw;
+    grid-template-columns: 1fr 2fr 1fr;
+    font-size: 1.4rem;
+
+}
+
+
+.Navbar-head{
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+.Navbar-center{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* align-items: center;
+    justify-items: center; */
+}
+
+.Navbar-center-links{
+    display: flex;
+    align-items: center;
+    /* justify-items: start; */
+    cursor: pointer;
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.Navbar-center-links-cat:hover{
+    color: #29643c;
+}
+
+.Navbar-search {
+    display: flex;
+    align-self: center;
+    justify-self: end;
+    background-color: #2f3640;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+  }
+  .Navbar-search:hover > .search-txt {
+    width: 400px;
+    padding: 0 6px;
+  }
+  .Navbar-search:hover > .search-btn {
+    background-color: white;
+  }
+  .Navbar-search a {
+    text-decoration: none;
+  }
+  
+  .search-btn {
+    color: #55c57a;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+  }
+  
+  .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+  }
+
+
+  .Navbar-link {
+    grid-column: 3/4;
+    align-self: center;
+    justify-self: end;
+    cursor: pointer;
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 20px;
+  }
+
+  .Navbar-link-cart:hover {
+    color: #29643c;
+  }
+
+  .Navbar-link-login:hover{
+    color: #29643c;
+}
+
+  .Navbar-link-signup{
+    margin-right: 25px;
+}
+
+.Navbar-link-signup:hover{
+    color: #29643c;
+}
